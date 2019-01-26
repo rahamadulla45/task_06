@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Restaurant
 from .forms import RestaurantForm
+
 def welcome(request):
     return render(request, 'index.html', {'msg':'Hello World!'})
 
